@@ -3,6 +3,7 @@ import { useAuth } from "../provider/authProvider";
 
 export const ProtectedRoute = () => {
   const { token } = useAuth();
+  console.log(token);
 
   // Check if the user is authenticated
   if (!token) {
